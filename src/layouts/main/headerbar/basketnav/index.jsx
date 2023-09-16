@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom';
 import Basket from '~/img/shoppingBasket.svg';
 
 export default function BasketNav() {
     return(
-        <div>
-            <img src={Basket} alt="" />
-            Sepetim
-        </div>
+        <Link className='accountBasket'>
+            <img src={Basket}/>
+            <h4>Sepetim</h4>
+        </Link>
     )
 }
