@@ -5,6 +5,8 @@
 }
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
   line-height: 1.5;
@@ -32,6 +34,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
+h3 {
+  margin-bottom: 35px;
+  letter-spacing: 0.6px;
+}
 .container {
   max-width: 1260px;
   margin-inline: auto;
@@ -56,4 +62,56 @@ a {
 .accountUser {
   display: flex;
   gap: 8px;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+.wrapperNav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+  
+}
+.wrapperNav li {
+  text-align: center;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.lists {
+  display: block;
+} 
+.card {
+  border: solid 1px #fff;
+  padding-inline: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.cardDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.card img {
+  margin-bottom: 10px;
+}
+.basketBtn {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: solid 1.7px #8d8d8c2d;
+  border-radius: 7px;
+  padding: 5px;
+  font-size: 13px;
+  background-color: #fff;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.basketBtn:hover {
+  background-color: #000000;
+  border: solid 1.7px #000000;
+  color: #fff;
+  transition: 0.6s;
 }

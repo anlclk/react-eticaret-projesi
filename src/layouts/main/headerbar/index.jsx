@@ -10,7 +10,6 @@ export default function HeaderBar() {
              <UserNav />
              <BasketNav />
            </ul>
-           
         </header>
     )
 }

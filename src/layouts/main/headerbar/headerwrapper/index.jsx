@@ -1,15 +1,24 @@
 import { Link } from "react-router-dom"
 
 export default function Wrapper() {
-    <ul className="wrapperNav">
-        <li>
-            <Link to="/erkek" >
-                Tüm ürünler
-            </Link>
-        </li>
-        <li><a href="">Tüm Ürünler</a></li>
-        <li><a href="">Erkek</a></li>
-        <li><a href="">Kadın</a></li>
-        <li><a href="">Çanta</a></li>
-    </ul>
+    return(
+        <ul className="wrapperNav">
+            <li>
+              <Link className="lists" to="erkek">
+                 Erkek
+              </Link>
+            </li>
+            <li>
+              <Link className="lists" to="kadin">
+                 Kadın
+              </Link>
+            </li>
+            <li>
+              <Link className="lists" to="canta">
+                 Çanta
+              </Link>
+            </li>
+        </ul>
+    )
+    
 }
