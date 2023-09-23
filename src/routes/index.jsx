@@ -1,10 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "~/pages/home";
-import Man from "~/pages/manproducts"
-import Bags from "~/pages/bags";
-import Woman from "~/pages/womanproducts";
 import NotFound from "~/pages/notfound";
 import MainLayout from "~/layouts/main";
+import BagProducts from "~/pages/bags";
+import ManProducts from "~/pages/manproducts";
+import WomanProducts from "~/pages/womanproducts";
 
 
 const routes = createBrowserRouter([
@@ -18,15 +18,15 @@ const routes = createBrowserRouter([
                 },
                 {
                     path: 'erkek',
-                    element: <Man />
+                    element: <ManProducts />
                 },
                 {
                     path: 'kadin',
-                    element: <Woman />
+                    element: <WomanProducts />
                 },
                 {
                     path: 'canta',
-                    element: <Bags />
+                    element: <BagProducts />
                 },
                 // yukarıdaki routelar ile eşleşmezse notfound ile eşleşsin
                 {

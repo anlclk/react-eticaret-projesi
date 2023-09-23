@@ -1,8 +1,13 @@
+import { useState } from "react";
 import products from "~/data"
 
 
 
 export default function ManProducts() {
+    const [cart, setCart] = useState([]);
+    const addToCart = (products) => {
+        setCart([...cart, products]);
+    }
     const manProductsList = products.filter(x => x.gender === 'Erkek');
     return(
         manProductsList.map(product => (
@@ -11,7 +16,7 @@ export default function ManProducts() {
                 <h3>{product.name}</h3>
                 <div className="cardDetails">
                     <p>{product.price} TL</p>
-                    <button className="basketBtn">Sepete Ekle</button>
+                    <button className="basketBtn" onClick={() => addToCart(products)}>Sepete Ekle</button>
                 </div>
             </div>
         ))

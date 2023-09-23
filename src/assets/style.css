@@ -59,9 +59,18 @@ h3 {
   display: flex;
   gap: 8px;
 }
+.accountBasket img {
+  height: 28px;
+  width: 28px;
+}
 .accountUser {
   display: flex;
+  align-items: center;
   gap: 8px;
+}
+.accountUser img {
+  height: 28px;
+  width: 28px;
 }
 .main {
   display: grid;
@@ -115,3 +124,24 @@ h3 {
   color: #fff;
   transition: 0.6s;
 }
+.basketIcon {
+  position: relative;
+}
+.basketCount {
+  background-color: red;
+  height: 18px;
+  width: 16px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -6px;
+  right: -7px;
+}
+span {
+  font-size: 14px;
+  color: #fff;
+}
+
+
