@@ -1,7 +1,6 @@
 import { Outlet } from "react-router-dom";
-import HeaderBar from "./headerbar";
-import Wrapper from "./headerbar/headerwrapper";
-
+import HeaderBar from "../headerbar/headerbar"
+import Wrapper from "../wrapper/wrapper";
 
 
 
