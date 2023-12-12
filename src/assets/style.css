@@ -60,23 +60,7 @@ a {
   width: 30px;
   height: 30px;
 }
-.accountBasket {
-  display: flex;
-  gap: 8px;
-}
-.accountBasket img {
-  height: 28px;
-  width: 28px;
-}
-.accountUser {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.accountUser img {
-  height: 28px;
-  width: 28px;
-}
+
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -87,7 +71,6 @@ a {
   justify-content: center;
   gap: 30px;
   margin-bottom: 50px;
-  
 }
 .wrapperNav li {
   text-align: center;
