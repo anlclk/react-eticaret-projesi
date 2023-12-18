@@ -1,8 +1,5 @@
-import { createClient } from '@supabase/supabase-js'
-import { useEffect, useState } from 'react'
-
-const supabase = createClient('https://rceavizwdfumfwcligdo.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJjZWF2aXp3ZGZ1bWZ3Y2xpZ2RvIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY5Mzc2NzE4OSwiZXhwIjoyMDA5MzQzMTg5fQ.HKb5hnAuE0GgkjsISYWYmRDpi4XeqV9aPU3T6ihqI_c')
-
+import { useEffect, useState } from 'react';
+import supabase from '~/assets/supabase/supabase';
 
 
 
@@ -12,7 +9,6 @@ export default function Home() {
     useEffect(() => {
         async function getProducts() {
             const { data, error } = await supabase.from('product').select()
-            console.log(data);
             if(error) {
                 console.log(error);
             }
