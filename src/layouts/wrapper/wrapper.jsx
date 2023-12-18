@@ -5,6 +5,11 @@ export default function Wrapper() {
     return(
         <ul className="wrapperNav">
             <li>
+                <Link to="/" className="lists">
+                    Tüm ürünler
+                </Link>
+            </li>
+            <li>
                 <Link to="erkek" className="lists">
                     Erkek
                 </Link>

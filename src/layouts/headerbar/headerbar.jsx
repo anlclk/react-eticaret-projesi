@@ -20,7 +20,6 @@ export default function HeaderBar() {
                     </svg>
                     <h4>Sepetim</h4>
                 </Link>
-
             </div>
         </header>
     );
