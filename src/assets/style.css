@@ -43,28 +43,16 @@ a {
   padding-block: 40px;
   padding-inline: 50px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 20px;
   border-bottom: solid 1.7px #8d8d8c2d;
-}
-.headerNav {
-  display: flex;
-  gap: 50px;
-}
-.headerNav a {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.headerNav svg {
-  width: 30px;
-  height: 30px;
 }
 
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 40px;
+  padding-bottom: 50px;
 }
 .wrapperNav {
   display: flex;
@@ -81,11 +69,29 @@ a {
 .lists {
   display: block;
 } 
+.myBasketBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
 .card {
   border: solid 1px #fff;
   padding: 10px 20px 10px 20px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+.softCard {
+  background-color: #352f2f22;
+  border: solid 1px #fff;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
 }
 .cardDetails {
   display: flex;
@@ -106,6 +112,16 @@ a {
   letter-spacing: 0.2px;
 }
 .basketBtn {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: solid 1.7px #8d8d8c2d;
+  border-radius: 7px;
+  padding: 5px;
+  font-size: 13px;
+  background-color: #fff;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.stockBtn {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border: solid 1.7px #8d8d8c2d;
   border-radius: 7px;
@@ -140,18 +156,41 @@ span {
   font-size: 14px;
   color: #fff;
 }
-.aside {
-  height: 100%;
+.basketArea {
   border: solid 1px #e3e3e3;
+  background-color: #f2f2f2;
   box-shadow: rgb(44, 26, 202) 0px 3px 8px;
   width: 320px;
-  height: 100%;
   position: absolute;
   top: 0;
-  right: 0;
-  padding: 50px 30px;
+  left: 0;
+  padding: 10px 30px;
   transition: all 1s;
-  z-index: 44;
-
+  z-index: 99999;
 }
-
+.close {
+  display: none;
+}
+.basketArea summary {
+  border-bottom: solid 1.7px #8d8d8c6f;
+  margin-bottom: 20px;
+}
+.basketinProduct {
+  border-bottom: solid 1.7px #8d8d8c6f;
+  margin-bottom: 15px;
+}
+.basketinImg {
+  width: 100px;
+  height: 100px;
+}
+.completeOrder {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: 1px solid #05891f ;
+  background-color: #63e857;
+  cursor: pointer;
+}
